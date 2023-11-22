@@ -25,7 +25,7 @@ function App() {
                 <div className="flex-row pl-2 text-lg">
                     <p>0123</p>
                 </div>
-                <div className="flex-row pr-2 text-lg">
+                <div className="flex-row pr-3 text-lg">
                     <p>02/09</p>
                 </div>
             </div>
@@ -33,7 +33,7 @@ function App() {
                 <div id="name-card" className="flex-row pl-2 text-3xl pt-5">
                     <p>Enrico</p>
                 </div>
-                <div className="flex justify-end">
+                <div className="flex justify-end pr-3">
                     <div id="visa-logo" className="flex-row w-1/4">
                         <img src={visa} alt=""/>
                     </div>
@@ -47,7 +47,7 @@ function App() {
       <div id="text" className="flex justify-center mt-12">
         <h1 className="text-8xl m-10">Are You Satisfied?</h1>
       </div>
-      <div id="rating" className="flex justify-center p-8 m-8">
+      <div id="rating" className="flex justify-center p-8 m-8 text-4xl">
               <div id="button1" className=" border-2 border-neutral-950 p-3 m-2">
                   <p>1</p>
               </div>
