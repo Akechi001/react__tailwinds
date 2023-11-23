@@ -21,7 +21,7 @@ function App() {
         <div id="palingluar" className="flex-col">
             <div id="head-bar" className="flex justify-end">
                 <div id="front-card"
-                     className={`flex-col bg-amber-400 w-1/3 justify-between rounded-3xl m-8 p-5 active:transition-transform active:scale-x-[-1] select-none active:duration-1000 ${isFlipped ? 'hidden' : ''}`}
+                     className={`flex-col bg-amber-400 w-1/3 justify-between rounded-3xl m-8 p-5 select-none ${isFlipped ? 'scale-x-[1] transition-transform duration-500 absolute z-10 ' : ' scale-x-[-1] transition-transform duration-500 z-0 '}`}
                      onClick={flipCard}>
                     <div className="">
                         <div id="headbard-card" className="flex justify-between">
@@ -63,7 +63,7 @@ function App() {
 
                 </div>
                 <div id="back-card"
-                     className={`flex-col bg-blue-200 w-1/3 justify-between rounded-3xl m-8  active:transition-transform active:scale-x-[-1] select-none active:duration-1000 ${isFlipped ? '' : 'hidden'}`}
+                     className={`flex-col bg-blue-200 w-1/3 justify-between rounded-3xl m-8 select-none ${isFlipped ? ' scale-x-[-1] transition-transform duration-500 z-0' : ' scale-x-[1] transition-transform duration-500  absolute z-10'}`}
                      onClick={flipCard}>
                     <div id="headbar-card-back" className="flex h-16 bg-black mt-10">
                     </div>
@@ -74,7 +74,7 @@ function App() {
                         <div id="right-center" className="flex border-2 w-1/4 rounded-lg">
                         </div>
                     </div>
-                    <div id="Bottom-card" className="flex-col text-left mt-5 mb-9 px-5 text-sm">
+                    <div id="Bottom-card" className="flex-col text-left mt-5 mb-10 px-5 text-sm">
                         <p>Lorem ipsum dolor sit amet, illud essent cu vel, te splendide</p>
                         <p>adversarium vix Sed mucius noster patrioque ex, eu vocent </p>
                         <p>constituam mei. Eu esse graeci per, eam ei falli causae repudiare. </p>
