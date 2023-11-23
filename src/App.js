@@ -21,7 +21,7 @@ function App() {
         <div id="palingluar" className="flex-col">
             <div id="head-bar" className="flex justify-end">
                 <div id="front-card"
-                     className={`flex-col bg-amber-400 w-1/3 justify-between rounded-3xl m-8 p-5 active:transition-transform active:scale-x-[-1] select-none ${isFlipped ? 'hidden' : ''}`}
+                     className={`flex-col bg-amber-400 w-1/3 justify-between rounded-3xl m-8 p-5 active:transition-transform active:scale-x-[-1] select-none active:duration-1000 ${isFlipped ? 'hidden' : ''}`}
                      onClick={flipCard}>
                     <div className="">
                         <div id="headbard-card" className="flex justify-between">
@@ -63,11 +63,11 @@ function App() {
 
                 </div>
                 <div id="back-card"
-                     className={`flex-col bg-blue-200 w-1/3 justify-between rounded-3xl m-8  active:transition-transform active:scale-x-[-1] select-none ${isFlipped ? '' : 'hidden'}`}
+                     className={`flex-col bg-blue-200 w-1/3 justify-between rounded-3xl m-8  active:transition-transform active:scale-x-[-1] select-none active:duration-1000 ${isFlipped ? '' : 'hidden'}`}
                      onClick={flipCard}>
                     <div id="headbar-card-back" className="flex h-16 bg-black mt-10">
                     </div>
-                    <div id="center-card-back" className="flex border-2 p-4 justify-between">
+                    <div id="center-card-back" className="flex p-4 justify-between">
                         <div id="left-center" className="flex border-2 justify-end w-2/3 p-4 ml-6 rounded-lg">
                             <p>123</p>
                         </div>
