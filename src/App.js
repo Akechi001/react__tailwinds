@@ -10,6 +10,13 @@ function App() {
         setFlipped(!isFlipped);
     };
 
+    const [selectedRating, setSelectedRating] = useState(0);
+
+    const handleRatingClick = (rating) => {
+        setSelectedRating(rating);
+    };
+
+
     return (
         <div id="palingluar" className="flex-col">
             <div id="head-bar" className="flex justify-end">
@@ -103,21 +110,11 @@ function App() {
                 <h1 className="text-8xl m-10">Are You Satisfied?</h1>
             </div>
             <div id="rating" className="flex justify-center p-8 m-8 text-4xl">
-                <div id="button1" className=" border-2 border-neutral-950 p-3 m-2 active:bg-amber-400">
-                    <p>1</p>
-                </div>
-                <div id="button2" className="border-2 border-neutral-950 p-3 m-2">
-                    <p>2</p>
-                </div>
-                <div id="button3" className="border-2 border-neutral-950 p-3 m-2">
-                    <p>3</p>
-                </div>
-                <div id="button4" className="border-2 border-neutral-950 p-3 m-2">
-                    <p>4</p>
-                </div>
-                <div id="button5" className="border-2 border-neutral-950 p-3 m-2 ">
-                    <p>5</p>
-                </div>
+                {[1, 2, 3, 4, 5].map((rating) => (
+                    <div key={rating} id={`button${rating}`} className={`border-2 border-neutral-950 p-3 m-2 rounded-3xl select-none ${selectedRating === rating ? 'bg-green-400' : ''}`} onClick={() => handleRatingClick(rating)}>
+                        <p>{rating}</p>
+                    </div>
+                ))}
             </div>
         </div>
     );
