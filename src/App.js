@@ -21,7 +21,7 @@ function App() {
         <div id="palingluar" className="flex-col">
             <div id="head-bar" className="flex justify-end">
                 <div id="front-card"
-                     className={`flex-col bg-amber-400 w-1/3 justify-between rounded-3xl m-8 p-5 select-none ${isFlipped ? 'scale-x-[1] transition-transform duration-500 absolute z-10 ' : ' scale-x-[-1] transition-transform duration-500 z-0 '}`}
+                     className={`flex-col bg-amber-400 w-1/3 justify-between rounded-3xl m-8 p-5 select-none ${isFlipped ? 'scale-x-[-1] transition-transform duration-500 absolute z-0 ' : ' scale-x-[1] transition-transform duration-500 z-10 '}`}
                      onClick={flipCard}>
                     <div className="">
                         <div id="headbard-card" className="flex justify-between">
@@ -63,7 +63,7 @@ function App() {
 
                 </div>
                 <div id="back-card"
-                     className={`flex-col bg-blue-200 w-1/3 justify-between rounded-3xl m-8 select-none ${isFlipped ? ' scale-x-[-1] transition-transform duration-500 z-0' : ' scale-x-[1] transition-transform duration-500  absolute z-10'}`}
+                     className={`flex-col bg-blue-200 w-1/3 justify-between rounded-3xl m-8 select-none ${isFlipped ? ' scale-x-[1] transition-transform duration-500 z-10' : ' scale-x-[-1] transition-transform duration-500  absolute z-0'}`}
                      onClick={flipCard}>
                     <div id="headbar-card-back" className="flex h-16 bg-black mt-10">
                     </div>
